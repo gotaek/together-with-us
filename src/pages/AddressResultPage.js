@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { getCurrentAddress } from "../API/getCurrentAddress";
-const data = require("../data.json");
-console.log(data);
-const SearchResult = ({ location }) => {
-  const [coord, setCoord] = useState({ longitude: "", latitude: "" });
-  const query = new URLSearchParams(location.search).get("name");
 
+const AddressResultPage = ({ data, query }) => {
+  const [coord, setCoord] = useState({ longitude: "", latitude: "" });
   const success = (position) => {
     setCoord({
       longitude: position.coords.longitude,
@@ -21,6 +18,7 @@ const SearchResult = ({ location }) => {
   useEffect(() => {
     getCurrentAddress(coord);
   }, [coord]);
-  return <div>{query}</div>;
+  return <>{query}</>;
 };
-export default SearchResult;
+
+export default AddressResultPage;

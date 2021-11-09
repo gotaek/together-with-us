@@ -1,19 +1,20 @@
 import { Routes, Route } from "react-router";
 import { createBrowserHistory } from "history";
 import Home from "./pages/Home";
-import SearchResult from "./pages/SearchResult";
+import SearchResultPage from "./pages/SearchResultPage";
+import AddressResultPage from "./pages/AddressResultPage";
 const history = createBrowserHistory();
 function App() {
   return (
     <Routes>
-      <Route path="/" exact element={<Home />} />
+      <Route path="/" element={<Home />} exact />
       <Route
         path="/search"
-        exact
         element={
-          <SearchResult location={history.location} navigator={history} />
+          <SearchResultPage location={history.location} navigator={history} />
         }
       />
+      <Route path="/location" element={<AddressResultPage />} />
     </Routes>
   );
 }

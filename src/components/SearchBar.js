@@ -5,7 +5,7 @@ const SearchBar = () => {
   const navigate = useNavigate();
   const keyPressHandler = (e) => {
     if (e.key === "Enter") {
-      navigate(`/search?q=${searchValue}`);
+      navigate(`/search?name=${searchValue}`);
     }
   };
   const changeHndler = (e) => {

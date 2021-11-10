@@ -1,4 +1,6 @@
 import React from "react";
-const TypeResultPage = () => {};
+const TypeResultPage = () => {
+  return <div>type</div>;
+};
 
 export default TypeResultPage;

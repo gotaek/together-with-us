@@ -13,7 +13,7 @@ const Box = styled.div`
   height: 100vh;
   margin: 0;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 2rem;
   transition: color 0.5s ease-in-out;
   cursor: pointer;
   ${(props) =>
@@ -21,6 +21,10 @@ const Box = styled.div`
     css`
       background: ${props.color};
     `};
+  @media screen and (max-width: 768px) {
+    font-size: 1.2rem;
+    font-weight: 200;
+  }
 `;
 const LeftBox = styled(Box)`
   background: ${(props) => props.color || "black"};
@@ -28,8 +32,10 @@ const LeftBox = styled(Box)`
   display: flex;
   justify-content: center;
   align-items: center;
+
   &:hover {
     color: white;
+    filter: saturate(80%);
   }
 `;
 const RightBox = styled(Box)`
@@ -43,9 +49,9 @@ const Container = styled.div`
   transform: translateY(-60%);
 `;
 const Title = styled.h1`
-  color: red;
+  color: #856646;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 600;
 `;
 
@@ -58,17 +64,18 @@ const TypeBox = styled.li`
   transition: color 0.5s ease-in-out;
   &:hover {
     color: white;
+    filter: saturate(80%);
   }
 `;
 const Home = () => {
   const navigate = useNavigate();
   const contents = [
-    { color: "red", text: "지체장애" },
-    { color: "blue", text: "지적장애" },
-    { color: "purple", text: "시각장애" },
-    { color: "orange", text: "청각장애" },
-    { color: "tomato", text: "뇌병변장애" },
-    { color: "green", text: "기타장애" },
+    { color: "#C5AFA4", text: "지체장애" },
+    { color: "#FFD0BD", text: "지적장애" },
+    { color: "#AFCCA7", text: "시각장애" },
+    { color: "#B8C3C5", text: "청각장애" },
+    { color: "#EED89C", text: "뇌병변장애" },
+    { color: "#D1758F", text: "기타장애" },
   ];
   const typeBoxClickHandler = (type) => {
     navigate(`/type?=${type}`);
@@ -78,8 +85,8 @@ const Home = () => {
   };
   return (
     <HomeContainer>
-      <LeftBox color={"teal"} onClick={leftBoxClickHandler}>
-        내 위치로 살펴보기
+      <LeftBox color={"#EAC092"} onClick={leftBoxClickHandler}>
+        내 주변 동호회 추천받기
       </LeftBox>
       <Container>
         <Title>우리 함께</Title>

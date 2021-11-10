@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import { GoSearch } from "react-icons/go";
 import { Link } from "react-router-dom";
@@ -11,7 +11,7 @@ const SearchBarContainer = styled.div`
   padding: 1rem;
   margin: 1.4rem;
   height: 4rem;
-  background-color: yellow;
+  background-color: #d2cbc1;
   border-radius: 1rem;
 `;
 const StyledInput = styled.input`
@@ -31,7 +31,7 @@ const SearchIcon = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 0.5em;
-  color: brown;
+  color: #856646;
   text-decoration: none;
 `;
 const SearchBar = () => {

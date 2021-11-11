@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
    *, *::before, *::after {
@@ -25,4 +25,13 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+export const Grid = styled("div")`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1rem;
+`;
+
+export const ResultPage = styled("div")`
+  margin: 2rem;
+`;
 export default GlobalStyle;

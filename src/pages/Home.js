@@ -78,7 +78,7 @@ const Home = () => {
     { color: "#D1758F", text: "기타장애" },
   ];
   const typeBoxClickHandler = (type) => {
-    navigate(`/type?=${type}`);
+    navigate(`/type?obs=${type}`);
   };
   const leftBoxClickHandler = () => {
     navigate("/location");

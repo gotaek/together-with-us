@@ -5,8 +5,8 @@ import Info from "../components/Info";
 import { Grid, ResultPage } from "../GlobalStyle";
 const data = require("../data.json");
 
+/* 동호회 이름 검색 결과 페이지 */
 const SearchResultPage = () => {
-  //query가 업데이트 되지 않는 오류가 있음
   const location = useLocation();
   const nameQuery = qs.parse(location.search, {
     ignoreQueryPrefix: true,

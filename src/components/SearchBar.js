@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { GoSearch } from "react-icons/go";
 import { Link } from "react-router-dom";
 
+/* 검색바 */
 const SearchBar = () => {
   const [searchValue, setSearchValue] = useState("");
   const navigate = useNavigate();
@@ -44,6 +45,7 @@ const SearchBar = () => {
   );
 };
 export default SearchBar;
+
 const SearchBarContainer = styled.div`
   display: flex;
   justify-content: space-between;

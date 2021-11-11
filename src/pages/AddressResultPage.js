@@ -5,11 +5,12 @@ import Info from "../components/Info";
 
 const data = require("../data.json");
 
+/*위치를 통해 동호회를 추천받는 페이지*/
 const AddressResultPage = () => {
   const [coord, setCoord] = useState({ longitude: "", latitude: "" });
   const [myCtprvn, setCtprvn] = useState("");
   const [mySigngu, setSigngu] = useState("");
-  const [loading, setLoading] = useState(false);
+
   const success = (position) => {
     setCoord({
       longitude: position.coords.longitude,
@@ -20,11 +21,9 @@ const AddressResultPage = () => {
     console.log("error");
   };
   useEffect(() => {
-    setLoading(true);
     navigator.geolocation.getCurrentPosition(success, error);
   }, []);
   useEffect(() => {
-    setLoading(true);
     const fetchData = async () => {
       const location = await getCurrentAddress(coord);
       console.log(location);
@@ -32,11 +31,8 @@ const AddressResultPage = () => {
       setSigngu(location.region_2depth_name);
     };
     fetchData();
-    setLoading(false);
   }, [coord]);
-  if (loading) {
-    return <div>loading</div>;
-  }
+
   return (
     <ResultPage>
       <Grid>

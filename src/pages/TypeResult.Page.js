@@ -5,8 +5,8 @@ import Info from "../components/Info";
 import { Grid, ResultPage } from "../GlobalStyle";
 const data = require("../data.json");
 
+/* 장애 유형을 통해 동호회를 추천하는 페이지 */
 const TypeResultPage = () => {
-  //query가 업데이트 되지 않는 오류가 있음
   const location = useLocation();
   const typeQuery = qs.parse(location.search, {
     ignoreQueryPrefix: true,

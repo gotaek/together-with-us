@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import styled, { css } from "styled-components";
 import SearchBar from "../components/SearchBar";
 
+/* 홈 페이지 */
 const Home = () => {
   const navigate = useNavigate();
   const contents = [

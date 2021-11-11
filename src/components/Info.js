@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+
 const data = require("../data.json");
 
+/* 동호회 정보 카드 */
 const Info = ({ index }) => {
   const object = data[index];
   const [description, setDescription] = useState(false);

@@ -1,5 +1,5 @@
 import axios from "axios";
-
+/* 좌표를 통해 위치 정보를 얻는 함수 */
 export const getCurrentAddress = (obj) => {
   const response = axios
     .get(

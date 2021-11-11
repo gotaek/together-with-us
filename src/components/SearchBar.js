@@ -4,36 +4,6 @@ import { useNavigate } from "react-router-dom";
 import { GoSearch } from "react-icons/go";
 import { Link } from "react-router-dom";
 
-const SearchBarContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  margin: 1.4rem;
-  height: 4rem;
-  background-color: #d2cbc1;
-  border-radius: 1rem;
-`;
-const StyledInput = styled.input`
-  width: 100%;
-  height: 100%;
-  border: none;
-  background-color: inherit;
-  font-size: 1.2rem;
-  font-weight: 400;
-  &:focus {
-    outline: none;
-  }
-`;
-const SearchIcon = styled.div`
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 0.5em;
-  color: #856646;
-  text-decoration: none;
-`;
 const SearchBar = () => {
   const [searchValue, setSearchValue] = useState("");
   const navigate = useNavigate();
@@ -74,3 +44,34 @@ const SearchBar = () => {
   );
 };
 export default SearchBar;
+const SearchBarContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 1.4rem;
+  height: 4rem;
+  background-color: #d2cbc1;
+  border-radius: 1rem;
+`;
+const StyledInput = styled.input`
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: inherit;
+  color: #856646;
+  font-size: 1.2rem;
+  font-weight: 400;
+  &:focus {
+    outline: none;
+  }
+`;
+const SearchIcon = styled.div`
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.5em;
+  color: #856646;
+  text-decoration: none;
+`;

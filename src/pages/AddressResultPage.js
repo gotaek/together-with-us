@@ -26,7 +26,6 @@ const AddressResultPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       const location = await getCurrentAddress(coord);
-      console.log(location);
       setCtprvn(location.region_1depth_name.substring(0, 2));
       setSigngu(location.region_2depth_name);
     };
@@ -37,10 +36,7 @@ const AddressResultPage = () => {
     <ResultPage>
       <Grid>
         {data.map((d, index) => {
-          return d.signgu_nm.includes(mySigngu) &&
-            d.ctprvn_nm.includes(myCtprvn) ? (
-            <Info index={index} />
-          ) : null;
+          return d.signgu_nm.includes(mySigngu) ? <Info index={index} /> : null;
         })}
       </Grid>
     </ResultPage>

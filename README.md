@@ -1,70 +1,28 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 국민체육진흥공단 2021년도 제3회 체육종합 데이터 활용 경진대회 출품작
+## 프로젝트 및 팀명: 우리 함께 
 
-## Available Scripts
+### 1. 필요성 및 목적
+- 비장애인을 위한 동호회의 정보는 쉽게 얻을 수 있는 반면 장애인들이 적극적으로 취미 생활을 즐기기 위한 동호회의 정보는 부족하기 때문에 습득하기에 어렵다.
+- 단계적 일상회복 최종 이행계획이 발표됨에 따라 사회적 거리두기로 제한되었던 동호회 문화를 활성화시킴으로 장애인들의 위축되었던 성취감, 유대감 등을 고취시킬 필요성이 있다. 
 
-In the project directory, you can run:
+### 2. 활용 데이터셋
+-장애인 생활체육 동호인 클럽 조회 (국민체육진흥공단, 대한장애인체육회)
 
-### `yarn start`
+### 3. 세부 추진내용
+#### 3.1 홈페이지
+- 전체적으로 UI를 크게 구성하여 사용자가 보기 쉽고, 사용하기에 편리하게 제작하였다.
+- 좌측에는 위치 기반으로 동호회를 추천 받을 수 있는 페이지로 이동하는 버튼이 존재한다.
+- ‘지체장애’, ‘지적장애’, ‘시각장애’, ‘청각장애’, ‘뇌병변장애’, ‘기타장애’ 문자열로 구성된 탭 바를 우측에 위치시켜 장애 유형을 통한 빠른 검색을 허용한다. 
+- 중앙에는 웹 페이지명과 검색 바가 존재한다. 검색 바를 이용해 동호회 이름 검색이 가능하다.
+#### 3.2 결과페이지
+- 홈페이지에서 버튼 클릭, 탭바 클릭, 검색 동작 수행 시 동호회들에 대한 정보가 카드형으로 나타난다.
+- 각 카드들은 동호회명, 동호회 위치, 동호회 종목, 장애 유형, 운영시간 등의 정보를 포함하고 있다. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 4. 기대효과 
+- 직관적인 UI를 제공하기 때문에 장애인들이 쉽게 정보를 확인해 동아리에 가입하도록 도울 수 있으며 지속가능한 플랫폼을 구축할 수 있다. 
+- 많은 사람들이 동호회 참여하는 기회를 마련함으로 올바른 스포츠 문화를 형성하는데 기여할 수 있다. 
+- 위치 기반 추천 시스템은 지역 중심으로 동호회 문화가 형성되도록 도움으로써 지역공동체 활성화 효과를 기대할 수 있다.
+- 해당 서비스 사용 사례 분석을 통해 공공 정책을 위한 기초 자료를 마련할 수 있다. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+링크: https://togetherwithus.netlify.app

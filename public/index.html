@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="./friend.png" />
@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="장애인 생활체육 동호회 검색 서비스 - 우리 함께"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
@@ -25,10 +25,30 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>우리 함께</title>
-    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gugi&family=Jua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+      .skip-link {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+        background: #1A3A5C;
+        color: #ffffff;
+        padding: 0.75rem 1.25rem;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 0 0 6px 0;
+        z-index: 9999;
+        text-decoration: none;
+      }
+      .skip-link:focus {
+        top: 0;
+        left: 0;
+      }
+    </style>
     </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>이 앱을 실행하려면 JavaScript를 활성화해야 합니다.</noscript>
+    <a href="#main-content" class="skip-link">본문으로 바로가기</a>
     <div id="root"></div>
     <!--
       This HTML file is a template.

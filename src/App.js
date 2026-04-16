@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router";
-import { createBrowserHistory } from "history";
 import Home from "./pages/Home";
 import SearchResultPage from "./pages/SearchResultPage";
 import AddressResultPage from "./pages/AddressResultPage";
